@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compressify - Download</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/download.css') }}">
+    <link rel="icon" type="image/png" href="../static/images/favicon.png">
+</head>
+<body>
+    <div class="top-bar">
+        Compressify
+    </div>
+    <div class="content">
+        <div class="form-container">
+            <div class="form-logo"></div>
+            <h1>Download</h1>
+            <div class="result-info">
+                <span id="resultFileName">{{ filename }}</span>
+                <div class="compression-meter" id="compressionMeter">
+                    <div class="progress-bar"></div>
+                </div>
+                <button class="download-btn">
+                    Download
+                    <span class="dropdown-arrow">&#11167;</span>
+                    <div class="dropdown-content">
+                        <a href="#" id="saveToDevice">Save to Device</a>
+                        <a href="#">Save to Google Drive</a>
+                        <a href="#">Save to Dropbox</a>
+                    </div>
+                </button>
+            </div>
+            <div class="action-strip">
+                <button id="compressMoreFiles">Compress More Files</button>
+                <button id="deleteFiles">Delete File</button>
+            </div>
+            <div class="message">
+                Files are automatically deleted after 30 minutes to protect your privacy. Please download the file before it is deleted.
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Compressify
+    </div>
+    <script src="{{ url_for('static', filename='js/download.js') }}"></script>
+</body>
+</html>
