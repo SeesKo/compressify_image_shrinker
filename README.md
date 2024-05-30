@@ -45,7 +45,7 @@ Compressify is a web application designed for image compression. It allows users
     python app.py
     ```
 
-5. Access the application in your web browser at [http://localhost:5000](http://localhost:5000).
+5. Access the application in your web browser at `http://localhost:5000`.
 
 
 ## Usage
