@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compressify - Image Compressor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/png" href="../static/images/favicon.png">
+</head>
+<body>
+    <div class="top-bar">
+        Compressify
+    </div>
+    <div class="content">
+        <div class="form-container">
+            <div class="form-logo"></div>
+            <h1>Image Compressor</h1>
+            <button class="upload-btn">
+                Choose File
+                <span class="dropdown-arrow">&#11167;</span>
+                <div class="dropdown-content">
+                    <a href="#" id="fromDevice">From Device</a>
+                    <a href="#" id="fromDropbox">From Dropbox</a>
+                    <a href="#" id="fromGoogleDrive">From Google Drive</a>
+                    <a href="#" id="fromURL">From URL</a>
+                </div>
+            </button>
+            <input type="file" id="fileInput" style="display: none;">
+            <div class="file-info" id="fileInfo" style="display: none;">
+                <span id="fileName"></span>
+                <span id="fileSize"></span>
+                <span id="fileType"></span>
+                <span class="file-remove" id="removeFile">Remove File</span>
+            </div>
+            <button class="settings-toggle" id="settingsToggle">Settings</button>
+            <div id="slider">
+                <label for="compressionRange">Compression Amount: <span id="compressionValue">50%</span></label>
+                <input type="range" id="compressionRange" name="compressionRange" min="0" max="100" step="1" value="50">
+                <div id="sliderLabels">
+                    <span>More<br>Quality</span>
+                    <span>More<br>Compression</span>
+                </div>
+            </div>
+            <div class="file-summary" id="fileSummary" style="display: none;">
+                <span id="fileCount">1 file added</span>
+                <button id="compressButton">Compress</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Compressify
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/api.js') }}"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="YOUR_APP_KEY"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+</body>
+</html>
