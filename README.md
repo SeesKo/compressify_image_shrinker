@@ -26,9 +26,6 @@ Compressify is a web application designed for image compression. It allows users
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/yourusername/compressify.git
-    ```
 
 2. Navigate to the project directory:
 
