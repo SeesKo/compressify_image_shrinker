@@ -1,7 +1,6 @@
 # Compressify
 
-Compressify is a web application designed for image compression. It allows users to upload images, select the desired compression level, compress the images, and download the compressed versions. Additionally, the application keeps track of uploaded, compressed, and deleted files in a SQLite database.
-
+Compressify is a web application designed to compress images, making them smaller and more manageable without significant loss in quality. This application allows users to upload images directly from their device or via URL, select the desired compression level, compress the images, and download the compressed versions.
 
 ## Features
 
@@ -19,13 +18,13 @@ Compressify is a web application designed for image compression. It allows users
 - APScheduler: A Python library for scheduling tasks
 - PIL (Python Imaging Library): A library for opening, manipulating, and saving many different image file formats
 - SQLite: A lightweight relational database management system
-- HTML/CSS: For the frontend user interface
+- HTML, CSS, JavaScript: For the frontend user interface
+- HTTP Requests: Requests library for handling URL uploads
 
 
 ## Installation
 
-1. Clone the repository:
-
+1. Clone the repository.
 
 2. Navigate to the project directory:
 
@@ -46,6 +45,24 @@ Compressify is a web application designed for image compression. It allows users
     ```
 
 5. Access the application in your web browser at `http://localhost:5000`.
+
+
+## Project Structure
+
+- **app.py**: Main application file that initializes Flask, sets up the database, and registers blueprints.
+- **routes/**: Contains route definitions for handling different HTTP requests.
+    - `main_routes.py`: Defines the main routes for the application.
+    - `compression_routes.py`: Defines routes for image compression-related operations.
+    - `download_routes.py`: Defines routes for downloading and deleting images.
+- **services/**: Contains business logic and helper functions.
+    - `compression_service.py`: Functions for compressing images and saving records.
+- **static/**: Contains static files like CSS and JavaScript.
+    - `script.js`: Handles frontend interactions for uploading and compressing images.
+    - `download.js`: Handles frontend interactions for downloading and deleting images.
+- **templates/**: Contains HTML templates.
+    - `index.html`: Main page template.
+    - `download.html`: Template for the download page.
+- **config.py**: Configuration settings for the application.
 
 
 ## Usage
@@ -85,6 +102,6 @@ This project is proprietary software and all rights are reserved. You may not co
 For inquiries regarding licensing or use of this software, please contact this account.
 
 
-## Support
+---
 
-For support or inquiries, please contact this account.
+This README file provides a comprehensive overview of the Compressify project, including its features, setup instructions, and project structure.
