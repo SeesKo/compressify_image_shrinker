@@ -14,6 +14,7 @@ const settingsToggle = document.getElementById('settingsToggle');
 const slider = document.getElementById('slider');
 const compressionRange = document.getElementById('compressionRange');
 const compressionValue = document.getElementById('compressionValue');
+const loadingSpinner = document.getElementById('loading-spinner');
 
 // Function to toggle the display of the Settings toggle button
 function toggleSettingsButton(display) {
@@ -110,10 +111,22 @@ removeFile.onclick = function() {
     toggleSettingsButton(false); // Hide the Settings toggle button
 };
 
+// Function to show the loading spinner
+function showLoadingSpinner() {
+    loadingSpinner.style.display = 'block';
+}
+
+// Function to hide the loading spinner
+function hideLoadingSpinner() {
+    loadingSpinner.style.display = 'none';
+}
+
+// Modify compressButton.onclick function to show spinner before fetch
 compressButton.onclick = function() {
     const file = fileInput.files[0];
 
     if (file && file.type.startsWith('image/')) {
+        showLoadingSpinner(); // Show loading spinner
         const formData = new FormData();
         formData.append('file', file);
         formData.append('compressionRange', compressionRange.value);
@@ -124,6 +137,7 @@ compressButton.onclick = function() {
         })
         .then(response => response.json().then(data => ({ status: response.status, body: data })))
         .then(({ status, body }) => {
+            hideLoadingSpinner(); // Hide loading spinner
             if (status === 413) {
                 alert(body.error);  // Show the custom error message for large files
             } else if (status === 200) {
@@ -133,6 +147,7 @@ compressButton.onclick = function() {
             }
         })
         .catch(error => {
+            hideLoadingSpinner(); // Hide loading spinner on error
             alert('Error: ' + error.message);
         });
     } else {
