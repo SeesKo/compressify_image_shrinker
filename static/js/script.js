@@ -14,7 +14,6 @@ const settingsToggle = document.getElementById('settingsToggle');
 const slider = document.getElementById('slider');
 const compressionRange = document.getElementById('compressionRange');
 const compressionValue = document.getElementById('compressionValue');
-const loadingSpinner = document.getElementById('loading-spinner');
 
 // Function to toggle the display of the Settings toggle button
 function toggleSettingsButton(display) {
@@ -111,47 +110,49 @@ removeFile.onclick = function() {
     toggleSettingsButton(false); // Hide the Settings toggle button
 };
 
-// Function to show the loading spinner
-function showLoadingSpinner() {
-    loadingSpinner.style.display = 'block';
+// Function to show the loading modal
+function showLoadingModal() {
+    var modal = document.getElementById('loading-modal');
+    modal.style.display = 'block';
 }
 
-// Function to hide the loading spinner
-function hideLoadingSpinner() {
-    loadingSpinner.style.display = 'none';
+// Function to hide the loading modal
+function hideLoadingModal() {
+    var modal = document.getElementById('loading-modal');
+    modal.style.display = 'none';
 }
 
-// Modify compressButton.onclick function to show spinner before fetch
+// Modify compressButton.onclick function to show modal before fetch
 compressButton.onclick = function() {
     const file = fileInput.files[0];
 
     if (file && file.type.startsWith('image/')) {
-        showLoadingSpinner(); // Show loading spinner
-        const formData = new FormData();
-        formData.append('file', file);
-        formData.append('compressionRange', compressionRange.value);
+      showLoadingModal(); // Show loading modal
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('compressionRange', compressionRange.value);
 
-        fetch('/upload', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json().then(data => ({ status: response.status, body: data })))
-        .then(({ status, body }) => {
-            hideLoadingSpinner(); // Hide loading spinner
-            if (status === 413) {
-                alert(body.error);  // Show the custom error message for large files
-            } else if (status === 200) {
-                window.location.href = '/results/' + body.filename;
-            } else {
-                alert('Upload failed: ' + body.error);
-            }
-        })
-        .catch(error => {
-            hideLoadingSpinner(); // Hide loading spinner on error
-            alert('Error: ' + error.message);
-        });
+      fetch('/upload', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json().then(data => ({ status: response.status, body: data })))
+      .then(({ status, body }) => {
+        hideLoadingModal(); // Hide loading modal
+        if (status === 413) {
+          alert(body.error);  // Show the custom error message for large files
+        } else if (status === 200) {
+          window.location.href = '/results/' + body.filename;
+        } else {
+          alert('Upload failed: ' + body.error);
+        }
+      })
+      .catch(error => {
+        hideLoadingModal(); // Hide loading modal on error
+        alert('Error: ' + error.message);
+      });
     } else {
-        alert('Sorry. Only images are allowed.');
+      alert('Sorry. Only images are allowed.');
     }
 };
 
