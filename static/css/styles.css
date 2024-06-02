@@ -305,6 +305,11 @@ body {
 }
 
 .spinner-text {
-    margin-top: 10px; /* Adjust as needed */
+    margin-top: 0px; /* Adjust as needed */
     color: #333333;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
