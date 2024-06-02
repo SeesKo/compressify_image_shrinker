@@ -20,6 +20,8 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
 
+    Config.init_app(app)  # Ensure directories are created
+
     db.init_app(app)  # Initialize the database
 
     # Register blueprints for different routes
