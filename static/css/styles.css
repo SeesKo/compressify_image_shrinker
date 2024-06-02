@@ -306,7 +306,7 @@ body {
 
 .spinner-text {
     margin-top: 0px; /* Adjust as needed */
-    color: #333333;
+    color: green;
 }
 
 @keyframes spin {
