@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="static/images/form_logo_clean.png" alt="Compressify-logo" style="border-radius: 15px;"/>
+  <img src="static/images/form_logo.png" alt="Compressify-logo" style="border-radius: 15px;"/>
 </p>
 
 
