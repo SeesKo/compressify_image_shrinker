@@ -21,13 +21,13 @@ Compressify is a web application designed to compress images, making them smalle
 
 ## Technologies Used
 
-- Flask: A micro web framework for Python
-- SQLAlchemy: An SQL toolkit and Object-Relational Mapping (ORM) library for Python
-- APScheduler: A Python library for scheduling tasks
-- PIL (Python Imaging Library): A library for opening, manipulating, and saving many different image file formats
-- SQLite: A lightweight relational database management system
-- HTML, CSS, JavaScript: For the frontend user interface
-- HTTP Requests: Requests library for handling URL uploads
+- **Flask:** A micro web framework for Python
+- **SQLAlchemy:** An SQL toolkit and Object-Relational Mapping (ORM) library for Python
+- **APScheduler:** A Python library for scheduling tasks
+- **Pillow (Python Imaging Library):** A library for opening, manipulating, and saving many different image file formats
+- **SQLite:** A lightweight relational database management system
+- **HTML, CSS, JavaScript:** For the frontend user interface
+- **HTTP Requests:** Requests library for handling URL uploads
 
 
 ## Installation
@@ -57,20 +57,20 @@ Compressify is a web application designed to compress images, making them smalle
 
 ## Project Structure
 
-- **app.py**: Main application file that initializes Flask, sets up the database, and registers blueprints.
-- **routes/**: Contains route definitions for handling different HTTP requests.
+- **app.py:** Main application file that initializes Flask, sets up the database, and registers blueprints.
+- **routes/:** Contains route definitions for handling different HTTP requests.
     - `main_routes.py`: Defines the main routes for the application.
     - `compression_routes.py`: Defines routes for image compression-related operations.
     - `download_routes.py`: Defines routes for downloading and deleting images.
-- **services/**: Contains business logic and helper functions.
+- **services/:** Contains business logic and helper functions.
     - `compression_service.py`: Functions for compressing images and saving records.
-- **static/**: Contains static files like CSS and JavaScript.
+- **static/:** Contains static files like CSS and JavaScript.
     - `script.js`: Handles frontend interactions for uploading and compressing images.
     - `download.js`: Handles frontend interactions for downloading and deleting images.
-- **templates/**: Contains HTML templates.
+- **templates/:** Contains HTML templates.
     - `index.html`: Main page template.
     - `download.html`: Template for the download page.
-- **config.py**: Configuration settings for the application.
+- **config.py:** Configuration settings for the application.
 
 
 ## Usage
