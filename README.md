@@ -1,9 +1,9 @@
 # Compressify
 
 
-<p align="center">
+<div style="text-align: center;">
   <img src="static/images/form_logo.png" alt="Compressify-logo" style="border-radius: 30px;"/>
-</p>
+</div>
 
 
 Compressify is a web application designed to compress images, making them smaller and more manageable without significant loss in quality. This application allows users to upload images directly from their device or via URL, select the desired compression level, compress the images, and download the compressed versions.
