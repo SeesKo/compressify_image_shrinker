@@ -107,8 +107,8 @@ Erick Siiko
 
 Some websites and resources that inspired Compressify's design:
 
-- [FreeConvert](https://www.freeconvert.com/mp3-converter) - Inspiration for the user interface and layout.
-- [ResizePixel](https://www.resizepixel.com/resize-image/) - Ideas for certain features and functionalities.
+- **FreeConvert** - Inspiration for the user interface and layout.
+- **ResizePixel** - Ideas for certain features and functionalities.
 
 
 ## License
