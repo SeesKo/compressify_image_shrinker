@@ -11,8 +11,9 @@ Compressify is a web application designed to compress images, making them smalle
 
 For a detailed overview of the project's development, read the final project blog article [here](link-to-blog-article).
 
-**Author:**
-**Erick Siiko:** [LinkedIn](https://www.linkedin.com/in/siiko/)
+**Author:**  
+Erick Siiko: [LinkedIn](https://www.linkedin.com/in/siiko/)
+
 
 ## Features
 
