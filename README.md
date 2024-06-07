@@ -14,6 +14,28 @@ You can check out the deployed site here: [Compressify](https://compressify.onre
 For a detailed overview of the project's development, read the final project blog article here:  
 [Compressify Project Blog Article](link-to-blog-article)
 
+### Inspiration
+
+As a developer and general web user, I often find myself dealing with large image files that need to be optimized for web projects or simply need to be stored on my phone or laptop. Some existing online compressors are not that user-friendly. They have lots of settings - technical calibrations and parameters - that might be too complex for a user who might just want to quickly compress an image and get out of there! Therefore, I thought it to be a good challenge to design and create an easy-to-use app that a user who is unfamiliar with technical image compression vocabulary would have little trouble using. The goal is to offer a simple, intuitive interface that allows anyone to compress images efficiently without needing to understand the intricacies of image optimization.
+
+### Technical Challenge
+
+The technical challenge lay in implementing a compression algorithm that balanced file size reduction with minimal loss in image quality. After extensive research and experimentation, I settled on using the Pillow library in Python for image processing. Pillow offered a comprehensive set of tools for opening, manipulating, and saving various image file formats, making it the ideal choice for Compressify. Additionally, I integrated Flask, a micro web framework for Python, to build the backend infrastructure, and SQLAlchemy for database management.
+
+### Resampling Algorithm: Why Lanczos?
+One of the critical decisions in developing Compressify was selecting the appropriate resampling algorithm for image resizing. After evaluating several options, including nearest neighbor, bilinear, bicubic, and Lanczos, I ultimately chose Lanczos resampling for its superior performance in preserving image detail and minimizing artifacts.
+
+Lanczos resampling, based on the Lanczos kernel, is known for its ability to produce high-quality results, particularly when downsampling images. Unlike simpler algorithms like nearest neighbor or bilinear interpolation, Lanczos interpolation considers a larger window of pixels, resulting in smoother transitions and sharper details.
+
+By incorporating Lanczos resampling into Compressify, I aimed to ensure that users could resize their images with confidence, knowing that the integrity of their visual content would be preserved as much as possible throughout the compression process.
+
+### Development Journey
+
+The development of Compressify was a journey filled with excitement, challenges, and moments of inspiration. From the initial concept to the final deployment, every step was guided by the vision of creating a user-friendly image compression tool.
+
+- **Planning Phase:** I began by outlining the features and functionalities of the application, sketching wireframes, and defining the project's architecture. This phase involved brainstorming sessions to refine the core idea and identify potential technical hurdles.
+- **Implementation:** With a clear roadmap in place, I delved into coding, translating the conceptual framework into a functional application. This phase involved writing backend logic for image compression, setting up database schemas, designing the frontend interface, and integrating various libraries and frameworks.
+
 
 ## Features
 
@@ -42,7 +64,7 @@ For a detailed overview of the project's development, read the final project blo
 2. Navigate to the project directory:
 
     ```bash
-    cd compressify
+    cd compressify_image_shrinker
     ```
 
 3. Install dependencies:
@@ -105,7 +127,7 @@ The application uses a SQLite database to store information about uploaded and c
 
 ## Author
 
-Erick Siiko: [LinkedIn](https://www.linkedin.com/in/siiko/)
+Erick Siiko: [Connect with me on LinkedIn](https://www.linkedin.com/in/siiko/)
 
 
 ## Related Projects
