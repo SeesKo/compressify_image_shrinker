@@ -20,6 +20,7 @@ As a developer and general web user, I often find myself dealing with large imag
 
 Therefore, I thought it would be a good challenge to design and create an easy-to-use app that a user who is unfamiliar with technical image compression vocabulary would have little trouble using. The goal is to offer a simple, intuitive interface that allows anyone to compress images efficiently without needing to understand the intricacies of image optimization.
 
+
 ## Technical Challenge
 
 <p align="center">
@@ -28,6 +29,7 @@ Therefore, I thought it would be a good challenge to design and create an easy-t
 
 The technical challenge lay in implementing a compression algorithm that balanced file size reduction with minimal loss in image quality. After extensive research and experimentation, I settled on using the Pillow library in Python for image processing. Pillow offered a comprehensive set of tools for opening, manipulating, and saving various image file formats, making it the ideal choice for Compressify. Additionally, I integrated Flask, a micro web framework for Python, to build the backend infrastructure, and SQLAlchemy for database management.
 
+
 ## Resampling Algorithm: Why Lanczos?
 
 One of the critical decisions in developing Compressify was selecting the appropriate resampling algorithm for image resizing. After evaluating several options, including nearest neighbor, bilinear, bicubic, and Lanczos, I ultimately chose Lanczos resampling for its superior performance in preserving image detail and minimizing artifacts.
@@ -35,6 +37,7 @@ One of the critical decisions in developing Compressify was selecting the approp
 Lanczos resampling, based on the Lanczos kernel, is known for its ability to produce high-quality results, particularly when downsampling images. Unlike simpler algorithms like nearest neighbor or bilinear interpolation, Lanczos interpolation considers a larger window of pixels, resulting in smoother transitions and sharper details.
 
 By incorporating Lanczos resampling into Compressify, I aimed to ensure that users could resize their images with confidence, knowing that the integrity of their visual content would be preserved as much as possible throughout the compression process.
+
 
 ## Development Journey
 
@@ -52,13 +55,12 @@ While Compressify has achieved its primary goals of providing image compression 
 
 Furthermore, I aim to enhance the scalability and performance of the application to handle larger volumes of image uploads and compression requests efficiently. This involves optimizing backend processes, adopting caching mechanisms, and leveraging cloud infrastructure for seamless scaling.
 
-<hr>
+
+## Features
 
 <p align="center">
   <img src="static/images/compress_pics.gif" alt="Compress-files"/>
 </p>
-
-## Features
 
 - Upload images either directly or through URLs
 - Choose from various compression levels (10, 25, 50, 75, or 90)
