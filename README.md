@@ -16,9 +16,15 @@ For a detailed overview of the project's development, read the final project blo
 
 ### Inspiration
 
-As a developer and general web user, I often find myself dealing with large image files that need to be optimized for web projects or simply need to be stored on my phone or laptop. Some existing online compressors are not that user-friendly. They have lots of settings - technical calibrations and parameters - that might be too complex for a user who might just want to quickly compress an image and get out of there! Therefore, I thought it to be a good challenge to design and create an easy-to-use app that a user who is unfamiliar with technical image compression vocabulary would have little trouble using. The goal is to offer a simple, intuitive interface that allows anyone to compress images efficiently without needing to understand the intricacies of image optimization.
+As a developer and general web user, I often find myself dealing with large image files that need to be optimized for web projects or simply need to be stored on my phone or laptop. Some existing online compressors are not that user-friendly. They have lots of settings - technical calibrations and parameters - that might be too complex for a user who just wants to quickly compress an image and move on.
+
+Therefore, I thought it would be a good challenge to design and create an easy-to-use app that a user who is unfamiliar with technical image compression vocabulary would have little trouble using. The goal is to offer a simple, intuitive interface that allows anyone to compress images efficiently without needing to understand the intricacies of image optimization.
 
 ## Technical Challenge
+
+<p align="center">
+  <img src="static/images/tech_difficult.jpg" alt="Technical-hitch"/>
+</p>
 
 The technical challenge lay in implementing a compression algorithm that balanced file size reduction with minimal loss in image quality. After extensive research and experimentation, I settled on using the Pillow library in Python for image processing. Pillow offered a comprehensive set of tools for opening, manipulating, and saving various image file formats, making it the ideal choice for Compressify. Additionally, I integrated Flask, a micro web framework for Python, to build the backend infrastructure, and SQLAlchemy for database management.
 
@@ -36,14 +42,20 @@ The development of Compressify was a journey filled with excitement, challenges,
 
 - **Planning Phase:** I began by outlining the features and functionalities of the application, sketching wireframes, and defining the project's architecture. This phase involved brainstorming sessions to refine the core idea and identify potential technical hurdles.
 - **Implementation:** With a clear roadmap in place, I delved into coding, translating the conceptual framework into a functional application. This phase involved writing backend logic for image compression, setting up database schemas, designing the frontend interface, and integrating various libraries and frameworks.
-- **Testing and Iteration:** As development progressed, I conducted rigorous testing to ensure the reliability and performance of Compressify. I solicited feedback from beta testers and iterated on the design and functionality based on user suggestions.
+- **Testing and Iteration:** As development progressed, I conducted rigorous testing to ensure the reliability and performance of Compressify. I solicited feedback from fellow learners who acted as beta testers and iterated on the design and functionality based on their suggestions.
 - **Deployment and Launch:** After thorough testing and optimization, Compressify was ready for deployment. I deployed the application to a web server, configured domain settings, and launched it to the public. The excitement of sharing the fruits of my labor with the world was unparalleled.
+
 
 ## Next Iteration and Future Plans
 
 While Compressify has achieved its primary goals of providing image compression functionality with a user-friendly interface, there is always room for improvement. In the next iteration, I envision implementing additional features such as batch image processing, integration with cloud storage services, and support for more advanced compression algorithms.
 
 Furthermore, I aim to enhance the scalability and performance of the application to handle larger volumes of image uploads and compression requests efficiently. This involves optimizing backend processes, adopting caching mechanisms, and leveraging cloud infrastructure for seamless scaling.
+
+
+<p align="center">
+  <img src="static/images/compress_files.gif" alt="Compress-files"/>
+</p>
 
 
 ## Features
