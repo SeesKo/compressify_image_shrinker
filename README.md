@@ -52,6 +52,7 @@ While Compressify has achieved its primary goals of providing image compression 
 
 Furthermore, I aim to enhance the scalability and performance of the application to handle larger volumes of image uploads and compression requests efficiently. This involves optimizing backend processes, adopting caching mechanisms, and leveraging cloud infrastructure for seamless scaling.
 
+<hr>
 
 <p align="center">
   <img src="static/images/compress_pics.gif" alt="Compress-files"/>
