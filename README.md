@@ -54,9 +54,8 @@ Furthermore, I aim to enhance the scalability and performance of the application
 
 
 <p align="center">
-  <img src="static/images/compress_files.gif" alt="Compress-files"/>
+  <img src="static/images/compress_pics.gif" alt="Compress-files"/>
 </p>
-
 
 ## Features
 
