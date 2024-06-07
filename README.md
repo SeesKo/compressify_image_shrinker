@@ -103,6 +103,14 @@ The application uses a SQLite database to store information about uploaded and c
 Erick Siiko
 
 
+## Related Projects
+
+Some websites and resources that inspired Compressify's design:
+
+- [FreeConvert](https://www.freeconvert.com/mp3-converter) - Inspiration for the user interface and layout.
+- [ResizePixel](https://www.resizepixel.com/resize-image/) - Ideas for certain features and functionalities.
+
+
 ## License
 
 This project is proprietary software and all rights are reserved. You may not copy, distribute, or modify this software without explicit permission from the author.
