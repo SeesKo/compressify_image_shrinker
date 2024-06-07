@@ -6,6 +6,24 @@
 </p>
 
 
+## Table of Contents
+- [Introduction](#introduction)
+  - [Inspiration](#inspiration)
+- [Technical Challenge](#technical-challenge)
+- [Resampling Algorithm: Why Lanczos?](#resampling-algorithm-why-lanczos)
+- [Development Journey](#development-journey)
+- [Next Iteration and Future Plans](#next-iteration-and-future-plans)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Database Schema](#database-schema)
+- [Author](#author)
+- [Related Projects](#related-projects)
+- [License](#license)
+
+
 ## Introduction
 Compressify is a web application designed to compress images, making them smaller and more manageable without significant loss in quality. This application allows users to upload images directly from their device or via URL, select the desired compression level, compress the images, and download the compressed versions.
 
