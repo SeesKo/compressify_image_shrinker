@@ -14,9 +14,6 @@ You can check out the deployed site here: [Compressify](https://compressify.onre
 For a detailed overview of the project's development, read the final project blog article here:  
 [Compressify Project Blog Article](link-to-blog-article)
 
-**Author:**  
-Erick Siiko: [LinkedIn](https://www.linkedin.com/in/siiko/)
-
 
 ## Features
 
@@ -106,9 +103,9 @@ The application uses a SQLite database to store information about uploaded and c
     upload_time (DateTime)
 
 
-## Contributors
+## Author
 
-Erick Siiko
+Erick Siiko: [LinkedIn](https://www.linkedin.com/in/siiko/)
 
 
 ## Related Projects
