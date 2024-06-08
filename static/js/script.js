@@ -15,6 +15,10 @@ const slider = document.getElementById('slider');
 const compressionRange = document.getElementById('compressionRange');
 const compressionValue = document.getElementById('compressionValue');
 
+// Set the current year in the footer
+const currentYear = new Date().getFullYear();
+document.getElementById('currentYear').textContent = currentYear;
+
 // Function to toggle the display of the Settings toggle button
 function toggleSettingsButton(display) {
     settingsToggle.style.display = display ? 'inline-block' : 'none';
