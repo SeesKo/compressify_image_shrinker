@@ -29,8 +29,10 @@ Compressify is a web application designed to compress images, making them smalle
 
 You can check out the deployed site here: [Compressify](https://compressify.onrender.com/)
 
+And the landing page: [Compressify Landing Page](https://seesko.github.io/compressify_landing/)
+
 For a detailed overview of the project's development, read the final project blog article here:  
-[Compressify Project Blog Article](link-to-blog-article)
+[Compressify Project Blog Article](https://www.linkedin.com/pulse/squeezing-pixels-making-compressify-siiko-koranchiko-8qxff)
 
 ### Inspiration
 
