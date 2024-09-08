@@ -170,7 +170,7 @@ The application uses a SQLite database to store information about uploaded and c
 
 ## Author
 
-Erick Siiko: [Connect with me on LinkedIn](https://www.linkedin.com/in/siiko/)
+Siiko: [Connect with me on LinkedIn](https://www.linkedin.com/in/siiko/)
 
 
 ## Related Projects
